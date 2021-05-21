@@ -1,0 +1,54 @@
+
+#big
+{
+    height: 550px;
+    background-color: black;
+    position: relative;
+    margin: auto
+}
+#ball
+{
+    position: absolute;
+    animation-name: dola;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes dola
+{
+    from{transform: rotate(0deg);}
+    to{transform:rotate((180deg));}
+}
+#big #ball img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#big img
+{
+    width: 60px;
+    height: 80px;
+}
+#score
+{
+    padding-left: 30px;
+    padding-top: 20px;
+    
+}
+
+#right
+{
+    transform: rotateY(180deg);
+    position: absolute;
+        right: 0;
+    display: none;
+}
+#left
+{
+    position: absolute;
+    left: 0;
+    display: none;
+}
